@@ -12,20 +12,14 @@ type trim struct {
 	x, y string
 }
 
-var t map[string]trim
-
-var m map[string]Vertex
+var m = map[string]Vertex{
+	"RedBull": Vertex{
+		40.55554, 45.68443,
+	}, "Monster": Vertex{
+		45.88634, 58.4479,
+	},
+}
 
 func main() {
-	m = make(map[string]Vertex)
-	m["RedBull"] = Vertex{
-		40.55554, 45.68443,
-	}
-	fmt.Println(m["RedBull"])
-
-	t = make(map[string]trim)
-	t["Monster"] = trim{
-		"enagy", "drink",
-	}
-	fmt.Println(t["Monster"])
+	fmt.Println(m)
 }
