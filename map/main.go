@@ -13,11 +13,8 @@ type trim struct {
 }
 
 var m = map[string]Vertex{
-	"RedBull": Vertex{
-		40.55554, 45.68443,
-	}, "Monster": Vertex{
-		45.88634, 58.4479,
-	},
+	"RedBull": {40.55554, 45.68443},
+	"Monster": {45.88634, 58.4479},
 }
 
 func main() {
